@@ -12,7 +12,7 @@ def main():
         for i in releases:
             utc_time = time.strptime(i[1], "%Y-%m-%dT%H:%M:%SZ")
             release_time_since_epoch = timegm(utc_time)
-            if int(time.time()-release_time_since_epoch) <= 301:
+            if int(time.time()-release_time_since_epoch) <= 303:
                 print 'build'
                 break
         else:
