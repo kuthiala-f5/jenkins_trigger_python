@@ -12,13 +12,13 @@ def main():
         for i in releases:
             utc_time = time.strptime(i[1], "%Y-%m-%dT%H:%M:%SZ")
             release_time_since_epoch = timegm(utc_time)
-            if int(time.time()-release_time_since_epoch) <= 300:
+            if int(time.time()-release_time_since_epoch) <= 301:
                 print 'build'
                 break
         else:
             print 'no_build'
     except:
         print 'no_build'
-        
+
 if __name__ == '__main__':
     main()
