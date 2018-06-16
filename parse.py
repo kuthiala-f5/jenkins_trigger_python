@@ -13,7 +13,7 @@ def main():
             utc_time = time.strptime(i[1], "%Y-%m-%dT%H:%M:%SZ")
             release_time_since_epoch = timegm(utc_time)
             if int(time.time()-release_time_since_epoch) <= 303:
-                print 'build'
+                print i[0]
                 break
         else:
             print 'no_build'
