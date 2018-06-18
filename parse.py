@@ -1,3 +1,4 @@
+#!/bin/bash
 import re
 import time
 from calendar import timegm
